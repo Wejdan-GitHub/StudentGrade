@@ -35,4 +35,19 @@ public class StudentGradeTest {
     public void tearDown() {
           System.out.println("calling tearDown()");
     } 
+    
+    
+    /*
+     *  Test Case #1
+     *  Input < 95 >
+     *  Expected output < A >
+     */
+    @Test
+    public void testGetGrade1() {
+        System.out.println("TC#1 for getGrade: Input< 95 >");
+        int mark = 95;
+        String expected = "A";
+        String actual = StudentGrade.getGrade(mark);
+        assertEquals(expected, actual);
+    }
 }
