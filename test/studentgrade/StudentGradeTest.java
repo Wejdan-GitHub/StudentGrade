@@ -94,4 +94,18 @@ public class StudentGradeTest {
         String actual = StudentGrade.getGrade(mark);
         assertEquals(expected, actual);
     } 
+    
+    /*
+     *  Test Case #5
+     *  Input < 65 >
+     *  Expected output < D >
+     */
+    @Test
+    public void testGetGrade5() {
+        System.out.println("TC#5 for getGrade: Input< 65 >");
+        int mark = 65;
+        String expected = "D";
+        String actual = StudentGrade.getGrade(mark);
+        assertEquals(expected, actual);
+    } 
 }
